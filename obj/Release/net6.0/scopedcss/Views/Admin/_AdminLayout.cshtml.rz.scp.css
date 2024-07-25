@@ -1,0 +1,89 @@
+.page[b-7q891jppiz] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #232526; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #414345, #232526); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+main[b-7q891jppiz] {
+    flex: 1;
+}
+
+.sidebar[b-7q891jppiz] {
+    background: #000000; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #434343, #000000); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.top-row[b-7q891jppiz] {
+    background: none;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-7q891jppiz]  a, .top-row[b-7q891jppiz]  .btn-link {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+        text-decoration: none;
+    }
+
+        .top-row[b-7q891jppiz]  a:hover, .top-row[b-7q891jppiz]  .btn-link:hover {
+            text-decoration: underline;
+        }
+
+        .top-row[b-7q891jppiz]  a:first-child {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-7q891jppiz] {
+        display: none;
+    }
+
+    .top-row.auth[b-7q891jppiz] {
+        justify-content: space-between;
+    }
+
+    .top-row[b-7q891jppiz]  a, .top-row[b-7q891jppiz]  .btn-link {
+        margin-left: 0;
+    }
+}
+
+.notification-icon[b-7q891jppiz] {
+    color: rgb(41,153,57);
+}
+
+@media (min-width: 641px) {
+    .page[b-7q891jppiz] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-7q891jppiz] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-7q891jppiz] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+        .top-row.auth[b-7q891jppiz]  a:first-child {
+            flex: 1;
+            text-align: right;
+            width: 0;
+        }
+
+    .top-row[b-7q891jppiz], article[b-7q891jppiz] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}

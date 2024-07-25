@@ -1,0 +1,45 @@
+﻿@model LoginViewModel
+@{
+
+    Layout = "_AccountLayout";
+    bool verify = ViewData["mode"] == null ? false:true;
+    
+    
+}
+<link rel="stylesheet" href="~/css/login.css" />
+<div class="login-container">
+    <span class="iconify login-icon" data-icon="bi:person-fill"></span>
+
+    @if (!verify)
+    {
+        <h2 class="login-title">Login</h2>
+        <form class="login-form" asp-action="Login" asp-controller="Account" method="post">
+            <div class="text-danger" asp-validation-summary="All"></div>
+            <div class="input-group">
+
+                <span class="input-group-text"><span class="iconify" data-icon="bi:person"></span></span>
+                <input type="text" class="form-control" asp-for="Username" placeholder="Username" required>
+            </div>
+            <div class="input-group">
+                <span class="input-group-text"><span class="iconify" data-icon="bi:key"></span></span>
+                <input type="password" class="form-control" asp-for="Password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+
+            <a asp-action="Register" asp-controller="Account" class="sign-up-link">Not registered? Sign Up</a>
+        </form>
+    }
+    else
+    {
+        <h2 class="login-title">Verify</h2>
+        <form class="login-form" asp-action="UpdatePhone" asp-controller="Account" method="get">
+            <div class="input-group">
+                <span class="input-group-text">+27</span>
+                <input type="hidden" name="userId" value="@ViewBag.Id"/>
+                <input type="tel" class="form-control" placeholder="CellNumber" name="Id" value="@ViewBag.phoneNumber" required>
+            </div>
+            <button type="submit" class="login-btn">Verify</button>
+        </form>
+    }
+
+</div>

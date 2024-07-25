@@ -1,0 +1,198 @@
+﻿@page "/chat/myChAT/{Id}/{recepientId}/{role}"
+@inject NavigationManager Navigation
+@inject MessageRepository MessageRepository
+@inject UserManager<ApplicationUser> UserManager
+@implements IAsyncDisposable
+@inject IJSRuntime JSRuntime
+@inject INotyfService NotifyService
+<div class="floating-icon" id="toggleSidebar">
+    <!-- You can change the icon below as needed -->
+    <span class="iconify" data-icon="bi:chat-right-quote" data-inline="false"></span>
+</div>
+<div class="sidebar" id="sidebar">
+    <!-- Contact List -->
+    <div class="contact-list">
+        <a href="@contactsLink" class="contact-list-item navbar-brand text-white">
+            <span class="navbar-text">MyContacts</span>
+        </a>
+    </div>
+</div>
+<div class="main-content">
+    <div class="app-bar">
+        <div>
+            <img src="/images/profiles/@Recepient.Avatar" alt="Profile Picture" class="profile-picture">
+        </div>
+        <div class="text-center">
+            <h1>@Recepient.UserName</h1>
+        </div>
+        <div>
+            <!-- Online status dot (You can toggle the class 'online' to change the status) -->
+            <div class="online-status-dot online"></div>
+        </div>
+    </div>
+    <div class="chat-box">
+        <!-- Chat messages will be displayed here -->
+        @if (Messages.Count() > 0)
+        {
+            foreach (var message in Messages)
+            {
+                if(message == Messages.Last())
+                {
+                    if (message.Sender_Id == Id && message.Recipient_Id == recepientId)
+                    {
+                        <div class="message yours" id="latest">
+                            <div class="message-content">@message.Content</div>
+                            <div class="message-time">@message.DateTime.ToLocalTime().ToString("g")</div>
+                        </div>
+                    }
+                    else if (message.Sender_Id == recepientId && message.Recipient_Id == Id)
+                    {
+                        <div class="message" id="latest">
+                            <div class="message-content text-dark">@message.Content</div>
+                            <div class="message-time text-dark">@message.DateTime.ToLocalTime().ToString("g")</div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    if (message.Sender_Id == Id && message.Recipient_Id == recepientId)
+                    {
+                        <div class="message yours">
+                            <div class="message-content">@message.Content</div>
+                            <div class="message-time">@message.DateTime.ToLocalTime().ToString("g")</div>
+                        </div>
+                    }
+                    else if (message.Sender_Id == recepientId && message.Recipient_Id == Id)
+                    {
+                        <div class="message">
+                            <div class="message-content text-dark">@message.Content</div>
+                            <div class="message-time text-dark">@message.DateTime.ToLocalTime().ToString("g")</div>
+                        </div>
+                    }
+                }
+            }
+        }
+        else
+        {
+            <div class="bg-light text-center text-dark">
+                No Messages
+            </div>
+        }
+    </div>
+    <!-- Message input form -->
+    <div class="input-box">
+        <input type="text" @bind ="MessageInput" placeholder="Type your message">
+        <button @onclick="Send" disabled="@(!IsConnected)">&#9658;</button>
+    </div>
+</div>
+@code{
+    [Parameter]
+    public string? Id { get; set; } 
+    [Parameter]
+    public string? recepientId { get; set; }
+    [Parameter]
+    public string? role { get; set; }
+    public string? MessageInput { get; set; }
+    public string contactsLink { get; set; } = string.Empty;
+    List<Message> Messages { get; set; } = new List<Message>();
+    ApplicationUser Recepient { get; set; } = new ApplicationUser(); 
+    private HubConnection? hubConnection;
+
+    private string getContactsLink()
+    {
+
+        if (role == "admin")
+        {
+            return "/Admin/Contacts";
+        }
+        if (role == "parent")
+        {
+            return "/Parent/Contacts";
+        }
+
+        return "/Driver/Contacts";
+    }
+    protected override async Task OnInitializedAsync()
+    {
+
+        hubConnection = new HubConnectionBuilder()
+            .WithUrl(Navigation.ToAbsoluteUri("/chathub"))
+            .Build();
+
+        hubConnection.On<string, string>("ReceiveMessage", async (message , recepientId) =>
+        {
+
+            if(recepientId == Id)
+            {
+                var info = message.Split("+");
+                if (info != null)
+                {
+                    Message newMessage = new Message
+                        {
+                            Sender_Id = info[0],
+                            Recipient_Id = recepientId,
+                            Content = info[1]
+                        };
+                    //NotifyService.Information($"New Message from {UserManager.FindByIdAsync(newMessage.Sender_Id).Result.UserName}", 2);
+                    await JSRuntime.InvokeVoidAsync("notifyMe", UserManager.FindByIdAsync(newMessage.Sender_Id).Result.UserName);
+                    Messages.Add(newMessage);
+                    
+                    await InvokeAsync(StateHasChanged);
+                }
+            };
+
+        });
+
+        await hubConnection.StartAsync();
+        await JSRuntime.InvokeVoidAsync("loadSidebar");
+    }
+    protected override void OnParametersSet()
+    {
+        if(Id != null)
+        {
+            Messages = MessageRepository.GetMessages(Id);
+
+        }
+        if(recepientId != null)
+        {
+            Recepient = UserManager.FindByIdAsync(recepientId).Result;
+        }
+        if (role != null)
+        {
+            contactsLink = getContactsLink();
+        }
+        
+    }
+    private async Task Send()
+    {
+        if(MessageInput != null && !MessageInput.Equals(""))
+        {
+            if (hubConnection is not null)
+            {
+                await hubConnection.SendAsync("SendMessage", $"{Id}+{MessageInput}", recepientId);
+                Message message = new Message
+                    {
+                        Recipient_Id = recepientId!,
+                        Sender_Id = Id!,
+                        Content = MessageInput
+                    };
+
+                Messages.Add(message);
+                MessageRepository.SaveMessage(message);
+                MessageInput = string.Empty;
+                await InvokeAsync(StateHasChanged);
+            }
+        }
+    }
+
+    public bool IsConnected =>
+        hubConnection?.State == HubConnectionState.Connected;
+
+    public async ValueTask DisposeAsync()
+    {
+        if (hubConnection is not null)
+        {
+            await hubConnection.DisposeAsync();
+        }
+    }
+}

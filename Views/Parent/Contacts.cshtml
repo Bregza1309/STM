@@ -1,0 +1,42 @@
+﻿@model List<ApplicationUser>
+@inject UserManager<ApplicationUser> UserManager
+@{
+    Layout = "_ParentLayout";
+    ApplicationUser appUser = UserManager.FindByNameAsync(User.Identity!.Name!).Result;
+}
+<h1 class="display-3 text-white">MyContacts</h1>
+<div class="contacts-list">
+    @foreach(var contact in Model)
+    {
+        @if(contact != null){
+            @if (contact == Model.First())
+            {
+                <a class="card col-md-4 bg-body mt-2 navbar-brand" href="/chat/myChAT/@appUser.Id/@contact.Id/parent">
+                    <div class="card-body">
+                        <!-- Iconify icon for user -->
+                        <img src="~/images/profiles/@contact.Avatar" class="rounded-circle" width="50" height="50" />
+
+                        <h5 class="card-title">@contact.UserName - Admin</h5>
+                        <p class="card-text">@contact.PhoneNumber</p>
+                        <p class="card-text">@contact.Email</p>
+                    </div>
+                </a>
+            }
+            else
+            {
+                <a class="card col-md-4 bg-body mt-2 navbar-brand" href="/chat/myChAT/@appUser.Id/@contact.Id/parent">
+                    <div class="card-body">
+                        <!-- Iconify icon for user -->
+                        <img src="~/images/profiles/@contact.Avatar" class="rounded-circle" width="50" height="50" />
+                        <h5 class="card-title">@contact.UserName</h5>
+                        <p class="card-text">@contact.PhoneNumber</p>
+                        <p class="card-text">@contact.Email</p>
+                    </div>
+                </a>
+            }
+        }
+    }
+    <!-- Modern contact cards -->
+    
+    <!-- Add more modern contact cards as needed -->
+</div>

@@ -1,0 +1,25 @@
+﻿@model OTPViewModel
+@{
+
+    Layout = "_AccountLayout";
+}
+<link rel="stylesheet" href="~/css/verify.css"/> 
+<div class="container text-white">
+    <div class="row justify-content-center">
+        <div class="col-md-6 otp-form">
+            <h2 class="text-center">OTP Verification</h2>
+            <form asp-action="Verify" asp-controller="Account" method="post">
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <input asp-for="PhoneNumber" type="hidden" value="@Model.PhoneNumber"/>
+                <div class="form-group">
+                    <label for="otp">Check for your sms for an OTP :Cell => @Model.PhoneNumber</label>
+                    <input type="text" asp-for="Otp" class="form-control" placeholder="Enter OTP">
+                </div>
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-success">Verify</button>
+                    <a class="btn btn-warning" asp-action="Account" asp-controller="Verify" asp-route-phoneNumber="@Model.PhoneNumber">Resend</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

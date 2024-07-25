@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parent - STM</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/STM.styles.css" asp-append-version="true" />
+    
+    <link rel="icon" href="~/favicon-32x32.png" type="image/x-icon">
+    <script src="~/js/autoAddress.js" type="text/javascript"></script>
+   
+</head>
+<body>
+    <div class="page">
+
+
+        <div class="sidebar">
+            <partial name="_ParentNavMenuPartial" />
+        </div>
+        <main>
+            <article class="content px-4">
+                @RenderBody()
+                <partial name="_ParentFloatingButtonPartial" />
+            </article>
+        </main>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpt0zlCjBZKelUBz4ZYhBnZENLnWJQiRI&libraries=places&callback=initMap&solution_channel=GMP_QB_addressselection_v1_cABC" async defer></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/iconify/iconify.min.js"></script>
+    <script src="~/lib/"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    
+    @await Component.InvokeAsync("Notyf")
+    
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+

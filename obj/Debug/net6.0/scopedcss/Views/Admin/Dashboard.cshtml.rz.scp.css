@@ -1,0 +1,48 @@
+
+
+.dashboard-section[b-tfco5graai] {
+    background: #000000; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #434343, #000000); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    cursor:pointer;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+a[b-tfco5graai]{
+    text-decoration-line:none;
+}
+
+    .dashboard-section:hover[b-tfco5graai] {
+        transform: scale(1.05);
+        background-color: #858282;
+        background: #606c88; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #3f4c6b, #606c88); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #3f4c6b, #606c88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+.icon-background[b-tfco5graai] {
+    font-size: 100px;
+    position: absolute;
+    opacity: 0.3;
+}
+#dashLink[b-tfco5graai] {
+    background: #BBD2C5; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #292E49, #536976, #BBD2C5); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.iconify[b-tfco5graai]{
+    color:#fff;
+}
+#dashLink:hover[b-tfco5graai] {
+    background: #485563; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #29323c, #485563); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

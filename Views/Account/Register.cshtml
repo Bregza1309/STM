@@ -1,0 +1,62 @@
+﻿@model RegisterViewModel
+@{
+
+    Layout = "_AccountLayout";
+}
+
+<link rel="stylesheet" href="~/css/register.css" />
+
+<div class="container">
+    <div class="registration-container">
+        <span class="iconify registration-icon" data-icon="bi:person-plus-fill"></span>
+        <h2 class="registration-title">Register</h2>
+        <form class="registration-form" asp-action="Register" asp-controller="Account" method="post">
+            <div class="text-danger" asp-validation-summary="All"></div>
+            <div>
+                <input type="hidden" id="latitude-input" asp-for="Latitude" />
+                <input type="hidden" id="longitude-input" asp-for="Longitude" />
+            </div>
+            <div class="input-group">
+                <span class="input-group-text"><span class="iconify" data-icon="bi:person"></span></span>
+                <input type="text" class="form-control" asp-for="FirstName" placeholder="FirstName">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text"><span class="iconify" data-icon="bi:person"></span></span>
+                <input type="text" class="form-control" placeholder="LastName" asp-for="LastName">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text">+27</span>
+                <input type="tel" class="form-control" placeholder="CellNumber" asp-for="PhoneNumber">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text"><span class="iconify" data-icon="bi:envelope"></span></span>
+                <input type="email" class="form-control" placeholder="Email" asp-for="Email">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text"><span class="iconify" data-icon="bi:key"></span></span>
+                <input type="password" class="form-control" placeholder="Password" asp-for="Password">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text"><span class="iconify" data-icon="bi:key"></span></span>
+                <input type="password" class="form-control" placeholder="Confirm Password" asp-for="ConfirmPassword">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text"><span class="iconify" data-icon="mdi:location"></span></span>
+                <input type="text" class="form-control" placeholder="Address" asp-for="Address" id="location-input">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text"><span class="iconify" data-icon="bi:person"></span></span>
+                <select class="form-select bg-dark text-white" asp-for="Role">
+                    <option value="" disabled selected>Select Role</option>
+                    <option value="Parent">Parent</option>
+                    <option value="Driver">Driver</option>
+                </select>
+            </div>
+            <button type="submit" class="registration-btn">Register</button>
+            <a asp-action="Login" asp-controller="Account" class="login-link">Already registered? Login</a>
+        </form>
+    </div>
+    <div>
+        <div class="map" id="map"></div>
+    </div>
+</div>

@@ -1,0 +1,71 @@
+﻿@model Dictionary<ApplicationUser, Driver>
+@{
+    Layout = "_ParentLayout";
+    int parentId = int.Parse(ViewData["ParentId"] as string ?? "0");
+    int studentId = int.Parse(ViewData["StudentId"] as string ?? "0");
+}
+<div class="container py-4">
+    <h1 class="text-center text-white display-2">Driver Search</h1>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+            <form asp-action="driverslist" asp-controller="Parent" asp-route-studentId="@studentId" asp-route-parentId="@parentId" method="get" class="mb-4" id="searchForm">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search drivers..." name="key">
+            <input type="hidden" name="studentId" value="@studentId"/>
+            <input type="hidden" name="parentId" value="@parentId"/>
+                    <button type="submit"  id="searchInput" class="btn btn-primary"><span class="iconify" data-icon="ri:user-search-fill"></span></button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <table class="table table-striped table-dark text-white">
+        <thead>
+            <tr><th>Firstname</th><th>LastName</th><th>Learner Capacity</th><th>Licence Number</th><th>Schools</th><th></th></tr>
+        </thead>
+        <tbody>
+            @if (!Model.Any())
+            {
+                <tr><td colspan="6" class="text-center">No Search Result (~..~)</td></tr>
+            }
+            else
+            {
+                @foreach(var kvp  in Model){
+                    @if (!kvp.Value.Verified)
+                    {
+                        continue;
+                    }
+                    <tr>
+                        <td>
+                            @kvp.Key.Firstname
+                        </td>
+                        <td>
+                            @kvp.Key.Lastname
+                        </td>
+                        <td>
+                            @kvp.Value.Students.Count()
+                        </td>
+                        <td>
+                            @kvp.Value.LicenseNumber
+                        </td>
+                        <td>
+                            @foreach(var student in kvp.Value.Students)
+                            {
+                                <div>@student.School!.Name</div>
+                            }
+                        </td>
+                        <td>
+                            <a class="btn btn-warning rounded-circle" asp-action="Driverdetails" asp-controller="Parent" asp-route-userId="@kvp.Key.Id" asp-route-studentId="@studentId" asp-route-parentId="@parentId"><span class="iconify" data-icon="carbon:view-filled"></span></a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4" class="text-center">Total </td>
+                <td colspan="2" class="text-center">@Model.Count()</td>
+            </tr>
+        </tfoot>
+    </table>
+  </div>
+

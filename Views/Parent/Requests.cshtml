@@ -1,0 +1,67 @@
+﻿@model List<Request>
+@inject IService<Driver> DriverService;
+@{
+    Layout = "_ParentLayout";
+    string userId = ViewData["Id"] as string ?? string.Empty;
+    Func<string, string> getDriverName = (Id) =>
+    {
+        var driver = DriverService.Get(Id).Keys.First();
+        return $"{driver.Firstname} , {driver.Lastname}";
+    };
+}
+<div class="container-fluid py-4">
+    <h1 class="text-center text-white display-2">My Requests</h1>
+    <table class="table table-striped table-dark text-white">
+        <thead>
+            <tr><th>Student's Fullname</th><th>School Name</th><th>Address</th><th>Date</th><th>Driver's Fullname</th><th>Status</th><th></th></tr>
+        </thead>
+        <tbody>
+            @if (!Model.Any())
+            {
+                <tr><td class="text-center" colspan="7">No Requests</td></tr>
+            }
+            else
+            {
+                @foreach (var request in Model)
+                {
+                    <tr class="drivers show">
+                        <td>
+                            @($"{request.Student!.Firstname}, {request.Student!.Lastname}")
+                        </td>
+                        <td>
+                            @request.Student.School!.Name
+                        </td>
+                        <td>
+                            @request.Student.Address
+                        </td>
+                        <td>
+                            @request.DateTime.ToLongDateString()
+                        </td>
+                        <td> @getDriverName(request.Driver!.UserId)</td>
+                        <td>
+                            @if (request.Accepted == null)
+                            {
+                                <div class="bg-warning text-white text-center">Pending</div>  
+                            }
+                            else
+                            {
+                                @if (request.Accepted.Value)
+                                {
+                                    <div class="bg-success text-white text-center">Accepted</div>
+                                }
+                                else
+                                {
+                                    <div class="bg-danger text-white text-center">Declined</div>
+                                }
+                            }
+                        </td>
+                        <td>
+                            <a class="btn btn-danger" asp-action="Requests" asp-controller="Parent" asp-route-Id="@request.Id"
+                               asp-route-username="@User.Identity!.Name"><span class="iconify" data-icon="oi:x"></span></a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

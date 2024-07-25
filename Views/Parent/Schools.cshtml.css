@@ -1,0 +1,43 @@
+﻿
+
+.jumbotron {
+    
+    color: #fff;
+}
+
+.school-card {
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+
+.card-header {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.iconify {
+    color: green;
+}
+
+
+.search-bar {
+    
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    
+    background-color: #444;
+    color: #fff;
+    border: none;
+}
+
+.list-group-item {
+    display: none; /* Hide all items initially */
+}
+
+    .list-group-item.show {
+        display: block; /* Show items that match the search query */
+    }

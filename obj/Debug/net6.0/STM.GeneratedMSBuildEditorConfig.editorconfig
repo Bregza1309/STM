@@ -1,0 +1,267 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = STM
+build_property.RootNamespace = STM
+build_property.ProjectDir = G:\STM\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = G:\STM
+build_property._RazorSourceGeneratorDebug = 
+
+[G:/STM/Pages/Chat.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/STM/Pages/DriverMap.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRHJpdmVyTWFwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/STM/Pages/Routed.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm91dGVkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/STM/Pages/TrackerMap.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJhY2tlck1hcC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/STM/Pages/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/STM/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/STM/Pages/Map.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/STM/Pages/MapIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFwSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/STM/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/STM/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/STM/Views/Admin/Parents.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUGFyZW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/STM/Views/Admin/Schools.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2Nob29scy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/STM/Views/Admin/Verifications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVmVyaWZpY2F0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/STM/Views/Driver/Requests.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHJpdmVyXFJlcXVlc3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/STM/Views/Driver/Vehicles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHJpdmVyXFZlaGljbGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/STM/Views/Driver/Verifications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHJpdmVyXFZlcmlmaWNhdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/STM/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/STM/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/STM/Views/Home/Verify.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWZXJpZnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/STM/Views/Parent/Requests.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50XFJlcXVlc3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/STM/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/STM/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/STM/Views/Shared/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/STM/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/STM/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/STM/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-wct5lqig7s
+
+[G:/STM/Views/Admin/Contacts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ29udGFjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-7318e5a1ns
+
+[G:/STM/Views/Admin/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-tfco5graai
+
+[G:/STM/Views/Admin/Driverdetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRHJpdmVyZGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-4mpef45xs0
+
+[G:/STM/Views/Admin/Driverslist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRHJpdmVyc2xpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-bijv4jgrma
+
+[G:/STM/Views/Admin/DriverTracking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRHJpdmVyVHJhY2tpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-d8z0o1ddvi
+
+[G:/STM/Views/Admin/LatestNews.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTGF0ZXN0TmV3cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-smjr5nqohx
+
+[G:/STM/Views/Admin/MyEditor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTXlFZGl0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-xi2pip534l
+
+[G:/STM/Views/Admin/StudentsDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3R1ZGVudHNEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-vywvxtqoi0
+
+[G:/STM/Views/Admin/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX0FkbWluTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-7q891jppiz
+
+[G:/STM/Views/Driver/Contacts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHJpdmVyXENvbnRhY3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-15vtd6s5pd
+
+[G:/STM/Views/Driver/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHJpdmVyXERhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-igcvq6xh9h
+
+[G:/STM/Views/Driver/Driverslist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHJpdmVyXERyaXZlcnNsaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-lax10a31ou
+
+[G:/STM/Views/Driver/LatestNews.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHJpdmVyXExhdGVzdE5ld3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-heggbhjoiz
+
+[G:/STM/Views/Driver/MyEditor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHJpdmVyXE15RWRpdG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-3n601bxi5y
+
+[G:/STM/Views/Driver/Schools.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHJpdmVyXFNjaG9vbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-op5d5q31w8
+
+[G:/STM/Views/Driver/StudentsDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHJpdmVyXFN0dWRlbnRzRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-zcjqkhfj6k
+
+[G:/STM/Views/Driver/VehicleEditor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHJpdmVyXFZlaGljbGVFZGl0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-gx0vtl9cyp
+
+[G:/STM/Views/Driver/_DriverLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHJpdmVyXF9Ecml2ZXJMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ajydtd88ly
+
+[G:/STM/Views/Parent/Contacts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50XENvbnRhY3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-rmgxx80kgx
+
+[G:/STM/Views/Parent/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50XERhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-sjz8aqr1ty
+
+[G:/STM/Views/Parent/Driverdetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50XERyaXZlcmRldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-khtioq774p
+
+[G:/STM/Views/Parent/Driverslist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50XERyaXZlcnNsaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-34ygc1tkqn
+
+[G:/STM/Views/Parent/DriverTracking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50XERyaXZlclRyYWNraW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-5kjlwurd51
+
+[G:/STM/Views/Parent/Editor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50XEVkaXRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-94ede52mk7
+
+[G:/STM/Views/Parent/MyEditor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50XE15RWRpdG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-b2uqi3nw4i
+
+[G:/STM/Views/Parent/Schools.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50XFNjaG9vbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-cb7bg9xnpe
+
+[G:/STM/Views/Parent/StudentsDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50XFN0dWRlbnRzRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-htzvl01q1r
+
+[G:/STM/Views/Parent/_ParentLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50XF9QYXJlbnRMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-t8dqr8nf14
+
+[G:/STM/Views/Shared/_AccountLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BY2NvdW50TGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-zdqk8iekw3
+
+[G:/STM/Views/Shared/_AdminFloatingButtonPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkZsb2F0aW5nQnV0dG9uUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-p3k98iwuqd
+
+[G:/STM/Views/Shared/_AdminNavMenuPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbk5hdk1lbnVQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-q3222nvl5l
+
+[G:/STM/Views/Shared/_DriverFloatingButtonPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ecml2ZXJGbG9hdGluZ0J1dHRvblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-k9hrra96yw
+
+[G:/STM/Views/Shared/_DriverNavMenuPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ecml2ZXJOYXZNZW51UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-dtocc096nf
+
+[G:/STM/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-imxdlv0rsc
+
+[G:/STM/Views/Shared/_ParentFloatingButtonPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXJlbnRGbG9hdGluZ0J1dHRvblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-lhtpuefmsz
+
+[G:/STM/Views/Shared/_ParentNavMenuPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXJlbnROYXZNZW51UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-opm2d7qio3

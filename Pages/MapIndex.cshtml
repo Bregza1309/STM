@@ -1,0 +1,26 @@
+﻿@page "/map"
+@{
+    Layout = null;
+
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Map</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/map.css" rel="stylesheet" />
+    <link rel="icon" href="~/favicon-32x32.png" type="image/x-icon">
+    <script src="https://cdn.klokantech.com/maptilerlayer/v1/index.js"></script>
+    
+</head>
+<body>
+    <component type="typeof(Routed)" render-mode="WebAssemblyPrerendered" />
+    <script src="/_framework/blazor.server.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/iconify/iconify.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpt0zlCjBZKelUBz4ZYhBnZENLnWJQiRI&libraries=places&callback=initMap&solution_channel=GMP_QB_addressselection_v1_cABC" async defer></script>
+    <script src="~/js/driverMap.js" asp-append-version="true"></script>
+    <script src="~/js/trackerMap.js" asp-append-version="true"></script>
+</body>
+</html>

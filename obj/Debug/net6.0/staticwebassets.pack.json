@@ -1,0 +1,513 @@
+{
+  "Files": [
+    {
+      "Id": "G:\\STM\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\STM.bundle.scp.css",
+      "PackagePath": "staticwebassets\\STM.bundle.scp.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\Notification.html",
+      "PackagePath": "staticwebassets\\Notification.html"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\android-chrome-192x192.png",
+      "PackagePath": "staticwebassets\\android-chrome-192x192.png"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\android-chrome-512x512.png",
+      "PackagePath": "staticwebassets\\android-chrome-512x512.png"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\apple-touch-icon.png"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\css\\Chat.css",
+      "PackagePath": "staticwebassets\\css\\Chat.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\css\\School.css",
+      "PackagePath": "staticwebassets\\css\\School.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\css\\blazorValidation.css",
+      "PackagePath": "staticwebassets\\css\\blazorValidation.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\css\\connectionErrors.css",
+      "PackagePath": "staticwebassets\\css\\connectionErrors.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\css\\errorBoundaries.css",
+      "PackagePath": "staticwebassets\\css\\errorBoundaries.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\css\\map.css",
+      "PackagePath": "staticwebassets\\css\\map.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\css\\register.css",
+      "PackagePath": "staticwebassets\\css\\register.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\css\\templatemo_style.css",
+      "PackagePath": "staticwebassets\\css\\templatemo_style.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\css\\verify.css",
+      "PackagePath": "staticwebassets\\css\\verify.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\favicon-16x16.png",
+      "PackagePath": "staticwebassets\\favicon-16x16.png"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\favicon-32x32.png"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\fonts\\FiraSans-Bold.eot",
+      "PackagePath": "staticwebassets\\fonts\\FiraSans-Bold.eot"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\fonts\\FiraSans-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\FiraSans-Bold.ttf"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\fonts\\FiraSans-Bold.woff",
+      "PackagePath": "staticwebassets\\fonts\\FiraSans-Bold.woff"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\fonts\\FiraSans-Light.eot",
+      "PackagePath": "staticwebassets\\fonts\\FiraSans-Light.eot"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\fonts\\FiraSans-Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\FiraSans-Light.ttf"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\fonts\\FiraSans-Light.woff",
+      "PackagePath": "staticwebassets\\fonts\\FiraSans-Light.woff"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\fonts\\FiraSans-Regular.eot",
+      "PackagePath": "staticwebassets\\fonts\\FiraSans-Regular.eot"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\fonts\\FiraSans-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\FiraSans-Regular.ttf"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\fonts\\FiraSans-Regular.woff",
+      "PackagePath": "staticwebassets\\fonts\\FiraSans-Regular.woff"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\images\\blur_img.jpg",
+      "PackagePath": "staticwebassets\\images\\blur_img.jpg"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\images\\download_background.jpg",
+      "PackagePath": "staticwebassets\\images\\download_background.jpg"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\images\\download_btn.png",
+      "PackagePath": "staticwebassets\\images\\download_btn.png"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\images\\jumbo_background.jpg",
+      "PackagePath": "staticwebassets\\images\\jumbo_background.jpg"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\images\\pattern_bg.png",
+      "PackagePath": "staticwebassets\\images\\pattern_bg.png"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\images\\profiles\\User-Avatar-Profile-PNG-Isolated-Transparent-Picture.png",
+      "PackagePath": "staticwebassets\\images\\profiles\\User-Avatar-Profile-PNG-Isolated-Transparent-Picture.png"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\images\\profiles\\profile.png",
+      "PackagePath": "staticwebassets\\images\\profiles\\profile.png"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\images\\vehicles\\2019-Toyota-Quantum-Taxi-27-Ses-Fikile-16s-1.jpeg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\2019-Toyota-Quantum-Taxi-27-Ses-Fikile-16s-1.jpeg"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\images\\vehicles\\OIP.jpg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\OIP.jpg"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\images\\vehicles\\mercedes_maybach_s_680_4matic_by_virgil_abloh_2022_2_hd_cars.jpg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\mercedes_maybach_s_680_4matic_by_virgil_abloh_2022_2_hd_cars.jpg"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\js\\Notify.js",
+      "PackagePath": "staticwebassets\\js\\Notify.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\js\\autoAddress.js",
+      "PackagePath": "staticwebassets\\js\\autoAddress.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\js\\driverMap.js",
+      "PackagePath": "staticwebassets\\js\\driverMap.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\js\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-ui.min.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\js\\jquery.parallax.js",
+      "PackagePath": "staticwebassets\\js\\jquery.parallax.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\js\\schools.js",
+      "PackagePath": "staticwebassets\\js\\schools.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\js\\templatemo_scripts.js",
+      "PackagePath": "staticwebassets\\js\\templatemo_scripts.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\js\\trackerMap.js",
+      "PackagePath": "staticwebassets\\js\\trackerMap.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\iconify\\iconify.d.ts",
+      "PackagePath": "staticwebassets\\lib\\iconify\\iconify.d.ts"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\iconify\\iconify.js",
+      "PackagePath": "staticwebassets\\lib\\iconify\\iconify.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\iconify\\iconify.min.js",
+      "PackagePath": "staticwebassets\\lib\\iconify\\iconify.min.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\iconify\\iconify.without-api.d.ts",
+      "PackagePath": "staticwebassets\\lib\\iconify\\iconify.without-api.d.ts"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\iconify\\iconify.without-api.js",
+      "PackagePath": "staticwebassets\\lib\\iconify\\iconify.without-api.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\iconify\\iconify.without-api.min.js",
+      "PackagePath": "staticwebassets\\lib\\iconify\\iconify.without-api.min.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\microsoft-signalr\\signalr.js",
+      "PackagePath": "staticwebassets\\lib\\microsoft-signalr\\signalr.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\lib\\microsoft-signalr\\signalr.min.js",
+      "PackagePath": "staticwebassets\\lib\\microsoft-signalr\\signalr.min.js"
+    },
+    {
+      "Id": "G:\\STM\\wwwroot\\site.webmanifest",
+      "PackagePath": "staticwebassets\\site.webmanifest"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.STM.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.STM.props",
+      "PackagePath": "build\\STM.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.STM.props",
+      "PackagePath": "buildMultiTargeting\\STM.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.STM.props",
+      "PackagePath": "buildTransitive\\STM.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

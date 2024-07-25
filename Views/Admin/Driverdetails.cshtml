@@ -1,0 +1,57 @@
+﻿@model Dictionary<ApplicationUser,Driver>
+@inject UserManager<ApplicationUser> UserManager
+@{
+    Layout = "_AdminLayout";
+    ApplicationUser user = UserManager.FindByNameAsync(User.Identity!.Name!).Result;
+}
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        @foreach (var kvp in Model)
+        {
+            <div class="text-center">
+                <img class="rounded-circle img-fluid" src="~/images/profiles/@kvp.Key.Avatar" width="200" height="200" />
+            </div>
+            <h2 class="text-center mt-3 text-white">@kvp.Key.UserName</h2>
+            <p class="text-center text-muted">Transport Driver</p>
+            <div class="card bg-black text-white">
+                <div class="card-header text-center">Driver Information</div>
+                <div class="card-body">
+                    <ul class="list-group bg-black">
+                        <li class="list-group-item bg-black  text-white">
+                            <span class="iconify" data-icon="ic:baseline-face" data-inline="false" style="font-size: 18px;"></span>
+                            Full Name: @($"{kvp.Key.Lastname},{kvp.Key.Firstname}")
+                        </li>
+                        <li class="list-group-item bg-black text-white">
+                            <span class="iconify" data-icon="ic:sharp-drive-file-recent" data-inline="false" style="font-size: 18px;"></span>
+                            Contact Number: @kvp.Key.PhoneNumber
+                        </li>
+                        <li class="list-group-item bg-black text-white">
+                            <span class="iconify" data-icon="ic:sharp-drive-file-recent" data-inline="false" style="font-size: 18px;"></span>
+                            License Number: @kvp.Value.LicenseNumber
+                        </li>
+                        <li class="list-group-item bg-black text-white">
+                            <span class="iconify" data-icon="ic:twotone-directions-car" data-inline="false" style="font-size: 18px;"></span>
+                            Number of Students: @(kvp.Value.Students == null ? 0 : kvp.Value.Students.Count())
+                        </li>
+                        <li class="list-group-item bg-black text-white">
+                            <span class="iconify" data-icon="ic:baseline-email" data-inline="false" style="font-size: 18px;"></span>
+                            Email: @kvp.Key.Email
+                        </li>
+                        <li class="list-group-item bg-black text-white">
+                            <span class="iconify" data-icon="ic:baseline-location-on" data-inline="false" style="font-size: 18px;"></span>
+                            Location: @($"{kvp.Key.Address}")
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-footer bg-black text-center">
+                    <a asp-action="Driverslist" asp-controller="Admin" class="btn btn-light">
+                        <span class="iconify" data-icon="ic:baseline-arrow-back" data-inline="false" style="font-size: 18px;"></span>
+                    </a>
+                    <a class="btn btn-success mt-2" href="/chat/myChat/@user.Id/@kvp.Key.Id/admin">
+                        <span class="iconify" data-icon="ic:baseline-message" data-inline="false" style="font-size: 18px;"></span>
+                    </a>
+                </div>
+            </div>
+        }
+    </div>
+</div>

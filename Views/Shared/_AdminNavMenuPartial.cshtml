@@ -1,0 +1,54 @@
+﻿@inject UserManager<ApplicationUser> Manager
+@{
+    string? page = (string?)(ViewData["page"]);
+    ApplicationUser applicationUser = await Manager.FindByNameAsync(User.Identity!.Name);
+}
+
+<div class="top-row ps-3 navbar navbar-dark navbar">
+    <div class="container-fluid">
+        <img class="rounded-circle img-fluid" src="~/images/profiles/@applicationUser.Avatar" width="40" height="40"/>
+        <a class="navbar-brand" href="">STM(Admin Portal)</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</div>
+
+<div class="navbar-collapse collapse" >
+    <nav class="flex-column">
+        <div class="nav-item px-3">
+            <a  class="nav-link @(page != null && page == "dashboard" ? "bg-light text-black":"")" asp-controller="Admin" asp-action="Dashboard">
+                <span class="iconify" data-icon="ic:round-dashboard"></span> Dashboard
+            </a>
+        </div>
+        
+        <div class="nav-item px-3">
+            <a class="nav-link @(page != null && page == "verify" ? "bg-light text-black":"")" asp-controller="Admin" asp-action="Verifications">
+                <span class="iconify" data-icon="uil:comment-verify"></span> Verifications
+            </a>
+        </div>
+        <div class="nav-item px-3">
+            <a class="nav-link @(page != null && page == "driverslist" ? "bg-light text-black":"")" asp-controller="Admin" asp-action="Driverslist">
+                <span class="iconify" data-icon="mdi:drivers-license"></span> Drivers
+            </a>
+        </div>
+        <div class="nav-item px-3">
+            <a class="nav-link @(page != null && page == "students" ? "bg-light text-black":"")" asp-controller="Admin" asp-action="StudentsDetails">
+                <span class="iconify" data-icon="raphael:people"></span> Students
+            </a>
+        </div>
+        <div class="nav-item px-3">
+            <a class="nav-link @(page != null && page == "parents" ? "bg-light text-black":"")" asp-controller="Admin" asp-action="Parents">
+                <span class="iconify" data-icon="eva:people-fill"></span> Parents
+            </a>
+        </div>
+        <div class="nav-item px-3">
+            <a class="nav-link @(page != null && page == "map" ? "bg-light text-black":"")" href="/mapbox">
+                <span class="iconify" data-icon="arcticons:maps"></span> Maps
+            </a>
+        </div>
+        
+    </nav>
+</div>
+

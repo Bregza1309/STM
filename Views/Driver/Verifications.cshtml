@@ -1,0 +1,57 @@
+﻿@model List<Verification>
+@{
+    Layout = "_DriverLayout";
+    string userId = ViewData["Id"] as string ?? string.Empty;
+}
+<div class="container py-4">
+    <h1 class="text-center text-white display-2">Verifications</h1>
+    <table class="table table-striped table-dark text-white">
+        <thead>
+            <tr><th>Vehicle's Registration</th><th>Date</th><th>Vehicle's Max Capacity </th><th>Status</th><th>Remove</th></tr>
+        </thead>
+        <tbody>
+            @if (!Model.Any())
+            {
+                <tr><td class="text-center" colspan="6">No Verifications</td></tr>
+            }
+            else
+            {
+                @foreach (var verification in Model)
+                {
+                    <tr>
+                        <td>
+                            <a class="btn btn-info" asp-action="VehicleEditor" asp-controller="Driver" asp-route-Id="@verification.VehicleId"><span class="iconify" data-icon="carbon:view-filled"></span></a>
+                        </td>
+                        <td>
+                            @verification.Date.ToLongDateString()
+                        </td>
+                        <td>
+                            @verification.Vehicle!.StudentCapacity Learners
+                        </td>
+                        <td>
+                            @if (verification.Verified == null)
+                            {
+                                <div class="bg-warning text-center">Pending</div>
+                            }
+                            else
+                            {
+                                @if (verification.Verified.Value)
+                                {
+                                    <div class="bg-success text-white text-center">Successfull</div>
+                                }
+                                else
+                                {
+                                    <div class="bg-danger text-white text-center">Failed</div>
+                                }
+                            }
+                        </td>
+                        <td>
+                            <a class="btn btn-danger" asp-action="Verifications" asp-controller="Driver" asp-route-Id="@verification.Id"
+                               asp-route-driverId="@verification.Driver!.UserId"><span class="iconify" data-icon="oi:x"></span></a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

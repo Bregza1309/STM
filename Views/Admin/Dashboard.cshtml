@@ -1,0 +1,60 @@
+﻿@{
+    Layout = "_AdminLayout";
+}
+<div class="container mt-4">
+    <div class="row">
+
+        <div class="col-lg-4 mt-4">
+            <a asp-controller="Admin" asp-action="Driverslist" class="text-center" style="text-decoration-line:none">
+                <div class="dashboard-section text-center">
+                    <span class="iconify icon-background" data-icon="mdi:drivers-license"></span>
+                    <h3>Drivers</h3>
+                    <p>Display and manage all Drivers Registered to the System .</p>
+                    
+                </div>
+            </a>
+            
+        </div>
+        <div class="col-lg-4 mt-4">
+            <a asp-action="StudentsDetails" asp-controller="Admin" class="text-center" style="text-decoration-line:none">
+                <div class="dashboard-section text-center">
+                    <span class="iconify icon-background" data-icon="raphael:people"></span>
+                    <h3>Students</h3>
+                    <p>Display and manage all Students Registered to the System .</p>
+                </div>
+            </a>
+            
+        </div>
+        <div class="col-lg-4 mt-4">
+            <a asp-action="Parents" asp-controller="Admin" class="text-center" style="text-decoration-line:none">
+                <div class="dashboard-section text-center">
+                    <span class="iconify icon-background" data-icon="eva:people-fill"></span>
+                    <h3>Parents</h3>
+                    <p>Display and manage all Parents Registered to the System .</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 mt-4">
+            <a asp-action="Verifications" asp-controller="Admin" class="text-center" style="text-decoration-line:none">
+                <div class="dashboard-section text-center">
+                    <span class="iconify icon-background" data-icon="uil:comment-verify"></span>
+                    <h3>Verifications</h3>
+                    <p>Verify Drivers and related Vehicles</p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="col-lg-4 mt-4">
+            <a asp-action="Schools" asp-controller="Admin" class="text-center" style="text-decoration-line:none">
+                <div class="dashboard-section text-center">
+                    <span class="iconify icon-background" data-icon="majesticons:search"></span>
+                    <h3>Search Registered Schools</h3>
+                    <p>View all the the schools registered to the system as Destinations</p>
+                </div>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+

@@ -1,0 +1,13 @@
+.card[b-34ygc1tkqn] {
+    background: radial-gradient(circle at 74.2% 50.9%, rgb(14, 72, 222) 5.2%, rgb(3, 22, 65) 75.3%);
+    cursor: pointer;
+}
+.card:hover[b-34ygc1tkqn] {
+    transform: scale(1.05);
+}
+.iconify[b-34ygc1tkqn]{
+    font-size:30px;
+}
+.card a :hover[b-34ygc1tkqn]{
+    transform:scale(1.05);
+}

@@ -1,0 +1,71 @@
+﻿@inject UserManager<ApplicationUser> Manager
+@{
+    Layout = "_DriverLayout";
+    ApplicationUser applicationUser = await Manager.FindByNameAsync(User.Identity!.Name);
+}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-4 mt-4">
+            <a asp-action="Vehicles" asp-controller="Driver" asp-route-Id="@applicationUser.Id" class="text-center" style="text-decoration-line:none">
+                <div class="dashboard-section text-center">
+                    <span class="iconify icon-background" data-icon="carbon:vehicle-api"></span>
+                    <h3>Vehicles</h3>
+                    <p>View and Manage my Vehicles</p>
+                </div>
+            </a>
+            
+        </div>
+        <div class="col-lg-4 mt-4">
+            <a asp-action="Verifications" asp-controller="Driver" asp-route-driverId="@applicationUser.Id" class="text-center" style="text-decoration-line:none">
+                <div class="dashboard-section text-center">
+                    <span class="iconify icon-background" data-icon="uil:comment-verify"></span>
+                    <h3>Verifications</h3>
+                    <p>Verify Drivers and related Vehicles</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 mt-4">
+            <a asp-controller="Driver" asp-action="Requests" asp-route-Id="@applicationUser.Id" class="text-center" style="text-decoration-line:none">
+                <div class="dashboard-section text-center">
+                    <span class="iconify icon-background" data-icon="carbon:intent-request-inactive"></span>
+                    <h3>Requests</h3>
+                    <p>View My Requests </p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 mt-4">
+            <a asp-controller="Driver" asp-action="StudentsDetails" asp-route-Id="@applicationUser.Id" class="text-center" style="text-decoration-line:none">
+                <div class="dashboard-section text-center">
+                    <span class="iconify icon-background" data-icon="fa6-solid:users-line"></span>
+                    <h3>Your Students</h3>
+                    <p>View the details of all the students you are Transporting </p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="col-lg-4 mt-4">
+            <a asp-controller="Driver" asp-action="Driverslist" class="text-center" style="text-decoration-line:none">
+                <div class="dashboard-section text-center">
+                    <span class="iconify icon-background" data-icon="mdi:user-search"></span>
+                    <h3>Other Driver</h3>
+                    <p>View all the Transport Drivers in the System</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 mt-4">
+            <a asp-controller="Driver" asp-action="Schools" class="text-center" style="text-decoration-line:none">
+                <div class="dashboard-section text-center">
+                    <span class="iconify icon-background" data-icon="majesticons:search"></span>
+                    <h3>Search Registered Schools</h3>
+                    <p>View all the the schools registered to the system as Destinations</p>
+                </div>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+

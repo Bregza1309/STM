@@ -1,0 +1,83 @@
+﻿@model Dictionary<ApplicationUser,Driver> 
+@inject RequestService RequestService
+@inject UserManager<ApplicationUser> UserManager
+@{
+    Layout = "_ParentLayout";
+    int parentId = int.Parse(ViewData["ParentId"] as string ?? "0");
+    int studentId = int.Parse(ViewData["StudentId"] as string ?? "0");
+    bool requestMode = parentId != 0 && studentId != 0;
+    var IsDuplicate = () =>
+    {
+        var requests = RequestService.GetAll();
+        return requests.Where(r => r.StudentId == studentId && r.DriverId == Model.Values.First().DriverId && r.Accepted == null).Any();
+
+    };
+    ApplicationUser user = UserManager.FindByNameAsync(User.Identity!.Name).Result;
+}
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        @foreach (var kvp in Model)
+        {
+            <div class="text-center">
+                <img class="rounded-circle img-fluid" src="~/images/profiles/@kvp.Key.Avatar" width="200" height="200" />
+            </div>
+            <h2 class="text-center mt-3 text-white">@kvp.Key.UserName</h2>
+            <p class="text-center text-muted">Transport Driver</p>
+            <div class="card">
+                <div class="card-header bg-dark text-center">Driver Information</div>
+                <div class="card-body bg-dark">
+                    <ul class="list-group bg-dark">
+                        <li class="list-group-item text-white">
+                            <span class="iconify" data-icon="ic:baseline-face" data-inline="false" style="font-size: 18px;"></span>
+                            Full Name: @($"{kvp.Key.Lastname},{kvp.Key.Firstname}")
+                        </li>
+                        <li class="list-group-item text-white">
+                            <span class="iconify" data-icon="ic:sharp-drive-file-recent" data-inline="false" style="font-size: 18px;"></span>
+                            Contact Number: @kvp.Key.PhoneNumber
+                        </li>
+                        <li class="list-group-item text-white">
+                            <span class="iconify" data-icon="ic:sharp-drive-file-recent" data-inline="false" style="font-size: 18px;"></span>
+                            License Number: @kvp.Value.LicenseNumber
+                        </li>
+                        <li class="list-group-item text-white">
+                            <span class="iconify" data-icon="ic:twotone-directions-car" data-inline="false" style="font-size: 18px;"></span>
+                            Number of Students: @kvp.Value.Students.Count()
+                        </li>
+                        <li class="list-group-item text-white">
+                            <span class="iconify" data-icon="ic:twotone-directions-car" data-inline="false" style="font-size: 18px;"></span>
+                            Students Limit: 
+                        </li>
+                        <li class="list-group-item text-white">
+                            <span class="iconify" data-icon="ic:baseline-email" data-inline="false" style="font-size: 18px;"></span>
+                            Email: @kvp.Key.Email
+                        </li>
+                        <li class="list-group-item text-white">
+                            <span class="iconify" data-icon="ic:baseline-location-on" data-inline="false" style="font-size: 18px;"></span>
+                            Location: @($"{kvp.Key.Address}")
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-footer text-center bg-dark">
+                    <a class="btn btn-light" asp-action="Driverslist" asp-controller="Parent">
+                        <span class="iconify" data-icon="ic:baseline-arrow-back" data-inline="false" style="font-size: 18px;"></span>Back
+                    </a>
+                   
+                    @if (requestMode)
+                    {
+                        @if (!IsDuplicate())
+                        {
+                            <a asp-action="RequestDriver" asp-controller="Parent" asp-route-driverId="@kvp.Value.DriverId" asp-route-studentId="@studentId" asp-route-parentId="@parentId" class="btn btn-success float-right">
+                                <span class="iconify" data-icon="uil:message" data-inline="false" style="font-size: 18px;"></span>Request
+                            </a>
+                        }
+                        else
+                        {
+                            <div class="bg-warning text-center">Request Pending</div>
+                        }
+                    }
+                    
+                </div>
+            </div>
+        }
+    </div>
+</div>

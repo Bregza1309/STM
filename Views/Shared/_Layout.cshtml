@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    
+    <script src="~/js/autoAddress.js"></script>
+    <link rel="icon" href="~/favicon-32x32.png" type="image/x-icon">
+    <!-- CSS -->
+    
+    <link rel="stylesheet" href="~/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css/templatemo_style.css">
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <title>STM</title>
+</head>
+<body>
+    <div class="show-menu">
+        <a href="#" class="shadow-top-down">+</a>
+    </div>
+    <nav class="main-menu shadow-top-down">
+        <ul class="nav nav-pills nav-stacked">
+            <li><a href="#templatemo_home" class="scroll_effect"><i class="fa fa-home" aria-hidden="true"></i>  Home</a></li>
+            <li><a href="#templatemo_features" class="scroll_effect"><i class="fa fa-cog" aria-hidden="true"></i>  Features</a></li>
+            <li><a href="#templatemo_contact" class="scroll_effect"><i class="fa fa-phone" aria-hidden="true"></i>  Contact</a></li>
+        </ul>
+    </nav>
+    @RenderBody()
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 footer-copyright">
+                    <p>Copyright &copy; 2023 <a href="#" target="_parent">Bregz@1309</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpt0zlCjBZKelUBz4ZYhBnZENLnWJQiRI&libraries=places&callback=initMap&solution_channel=GMP_QB_addressselection_v1_cABC" async defer></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/iconify/iconify.min.js"></script>
+    <script src="~/lib/iconify/iconify.js"></script>
+
+    <script src="~/js/jquery-ui.min.js"></script>
+    
+    <script src="~/js/jquery.parallax.js"></script>
+    <!-- template mo config script -->
+    <script src="js/templatemo_scripts.js"></script>
+    @await Component.InvokeAsync("Notyf")
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

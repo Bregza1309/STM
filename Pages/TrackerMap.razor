@@ -1,0 +1,78 @@
+﻿@page "/map/Tracker/{userId}"
+@inject UserManager<ApplicationUser> UserManager
+@inject IService<Driver> DriverService
+@if (User != null)
+{
+    <input type="hidden" @bind="User.Value.Key.Latitude" id="userLatitude" />
+    <input type="hidden" @bind="User.Value.Key.Longitude" id="userLongitude" />
+}
+<h5 class="text-white display-5 text-center">Driver Tracking</h5>
+<div class="row">
+    <div class="col-md-8">
+        
+        <div id="map">
+            
+        </div>
+    </div>
+    <div class="col-md-4">
+
+        <div class="text-center">
+           <img class="rounded-circle" src="/images/profiles/@User!.Value.Key.Avatar" width="50" height="50"/>
+        </div>
+        <h2 class="text-center mt-3 text-white">@User!.Value.Key.UserName</h2>
+        <p class="text-center text-muted">Transport Driver</p>
+        <div class="card">
+            <div class="card-header">Driver Information</div>
+            <div class="card-body bg-dark">
+                <ul class="list-group bg-dark">
+                    <li class="list-group-item  text-white bg-dark">
+                        <span class="iconify" data-icon="ic:baseline-face" data-inline="false" style="font-size: 18px;"></span>
+                        Full Name: @User!.Value.Key.Firstname , @User!.Value.Key.Lastname
+                    </li>
+                    
+                    <li class="list-group-item text-white bg-dark">
+                        <span class="iconify" data-icon="ic:sharp-drive-file-recent" data-inline="false" style="font-size: 18px;"></span>
+                        License Number: @User!.Value.Value.LicenseNumber
+                    </li>
+                    <li class="list-group-item text-white bg-dark">
+                        <span class="iconify" data-icon="ic:twotone-directions-car" data-inline="false" style="font-size: 18px;"></span>
+                        
+                        Vehicle Type: Uknown
+                    </li>
+                    <li class="list-group-item text-white bg-dark">
+                        <span class="iconify" data-icon="ic:baseline-email" data-inline="false" style="font-size: 18px;"></span>
+                        Email: @User!.Value.Key.Email
+                    </li>
+                    <li class="list-group-item text-white bg-dark">
+                        <span class="iconify" data-icon="ic:baseline-phone" data-inline="false" style="font-size: 18px;"></span>
+                        Phone: <a href="tel:@User!.Value.Key.PhoneNumber">@User!.Value.Key.PhoneNumber</a>
+                    </li>
+                    <li class="list-group-item text-white bg-dark">
+                        <span class="iconify" data-icon="ic:baseline-location-on" data-inline="false" style="font-size: 18px;"></span>
+                        Latitude: @User!.Value.Key.Latitude , Longitude : @User!.Value.Key.Longitude
+                    </li>
+                </ul>
+            </div>
+            <div class="card-footer bg-dark">
+                <a class="btn btn-light" href="/parent/studentsDetails">
+                    <span class="iconify" data-icon="ic:baseline-arrow-back" data-inline="false" style="font-size: 18px;"></span>
+                    Back
+                </a>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+@code {
+    [Parameter]
+    public string userId { get; set; } = string.Empty;
+
+    public KeyValuePair<ApplicationUser, Driver>? User { get; set; } 
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+        User = DriverService.Get(userId).First();
+    }
+}

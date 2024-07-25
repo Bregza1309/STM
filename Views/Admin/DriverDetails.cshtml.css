@@ -1,0 +1,21 @@
+﻿
+
+.card-header {
+    
+    color: #fff;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+
+
+    .list-group-item span {
+        color: #28a745;
+    }
+
+.text-muted {
+    color: #28a745;
+}
+

@@ -1,0 +1,106 @@
+﻿@model List<Vehicle>
+@inject VerificationService VerificationService
+
+@{
+    Layout = "_DriverLayout";
+    Func<int, bool> IsVerified = (Id) =>
+    {
+        Verification? verification = VerificationService.Get().SingleOrDefault(v => v.VehicleId == Id);
+        if(verification == null)
+        {
+            return false;
+        }
+        else
+        {
+            if(verification.Verified == null)
+            {
+                return false;
+            }
+            else
+            {
+                return verification.Verified.Value;
+            }
+        }
+    };
+    Func<int, bool> IsPending = (Id) =>
+    {
+        Verification? verification = VerificationService.Get().SingleOrDefault(v => v.VehicleId == Id);
+        if (verification == null)
+        {
+            return false;
+        }
+        else
+        {
+            if (verification.Verified == null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+    };
+}
+<div class="container py-4">
+    <h1 class="text-center text-white display-2">My Vehicles</h1>
+    <a class="btn btn-warning" asp-action="VehicleEditor" asp-controller="Driver"><span class="iconify" data-icon="mdi:add-bold"></span>New Vehicle</a>
+    <table class="table table-striped table-dark text-white">
+        <thead>
+            <tr><th>Description</th><th>Registration Number</th><th>Learner Capacity</th><th>Verification Status</th><th>Edit</th><th>Remove</th></tr>
+        </thead>
+        <tbody>
+            @if (!Model.Any())
+            {
+                <tr><td colspan="4" class="text-center">No Result (~..~)</td></tr>
+            }
+            else
+            {
+                @foreach (var vehicle in Model)
+                {
+                    <tr>
+                        <td>
+                            @vehicle.Description
+                        </td>
+                        <td>
+                            @vehicle.RegistrationNumber
+                        </td>
+                        <td>
+                            @vehicle.StudentCapacity
+                        </td>
+                        <td>
+                            @if (IsPending(vehicle.Id))
+                            {
+                                <div class="bg-warning text-center">Pending</div>
+                            }
+                            else 
+                            {
+                                @if (!IsVerified(vehicle.Id))
+                                {
+                                    <a class="btn btn-success" asp-action="SendVerification" asp-controller="Driver" asp-route-driverId="@vehicle.DriverId" asp-route-vehicleId="@vehicle.Id">Verify</a>
+                                }
+                                else
+                                {
+                                    <div class="text-center bg-success">Verified</div>
+                                }
+                            } 
+                        </td>
+                        <td>
+                            <a class="btn btn-outline-light" asp-action="VehicleEditor" asp-controller="Driver" asp-route-Id="@vehicle.Id">Edit</a>
+                        </td>
+                        <td>
+                            <a class="btn btn-danger" asp-action="DeleteVehicle" asp-controller="Driver" asp-route-vehicleId="@vehicle.Id" asp-route-userId="@vehicle.Driver!.UserId"><span class="iconify" data-icon="oi:x"></span></a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" class="text-center">Total </td>
+                <td colspan="2" class="text-center">@Model.Count()</td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+

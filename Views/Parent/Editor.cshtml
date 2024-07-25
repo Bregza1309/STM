@@ -1,0 +1,80 @@
+﻿@model Student
+@inject SchoolRepository SchoolRepo
+@inject UserManager<ApplicationUser> Manager
+@{
+    Layout = "_ParentLayout";
+    string mode = ViewData["mode"] as string == null ? "Register" : "Edit";
+    ApplicationUser applicationUser = await Manager.FindByNameAsync(User.Identity!.Name);
+    
+}
+<div class="content">
+    <div class="registration-container">
+        <span class="iconify registration-icon" data-icon="bi:person-plus-fill"></span>
+        <h2 class="registration-title">@mode Student</h2>
+        <form class="registration-form" asp-action="Editor" asp-controller="Parent" asp-route-name ="@User.Identity!.Name" method="post">
+            <div class="text-danger" asp-validation-summary="All"></div>
+            <input type="hidden" asp-for="StudentId" value="@(Model == null ? 0 : Model.StudentId)"/>
+            @if(mode == "Edit")
+            {
+                <input type="hidden" asp-for="DriverId" value="@Model!.DriverId"/>
+                <input type="hidden" asp-for="ParentId" value="@Model.ParentId"/>
+            }
+            <div>
+                <input type="hidden" id="latitude-input" asp-for="Latitude" />
+                <input type="hidden" id="longitude-input" asp-for="Longitude" />
+            </div>
+            <div class="input-group">
+                <span class="input-group-text"><span class="iconify" data-icon="bi:person"></span></span>
+                <input type="text" class="form-control" asp-for="Firstname" placeholder="FirstName">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text"><span class="iconify" data-icon="bi:person"></span></span>
+                <input type="text" class="form-control" placeholder="LastName" asp-for="Lastname">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text"><span class="iconify" data-icon="ic:baseline-school"></span></span>
+                <select class="form-select bg-dark text-white" asp-for="SchoolId">
+                    <option value="" disabled selected>Choose a School</option>
+                    @foreach(var school in SchoolRepo.GetAll())
+                    {
+                        <option value="@school.Id">@school.Name</option>   
+                    }
+                </select>
+            </div>
+            <div class="input-group">
+                <span class="input-group-text"><span class="iconify" data-icon="material-symbols:grade-outline"></span></span>
+                <select class="form-select bg-dark text-white" asp-for="Grade">
+                    <option value="" disabled selected>Choose Grade</option>
+                    <option value="R">R</option>
+                    @foreach (int i in Enumerable.Range(1, 7))
+                    {
+                        <option value="@i">@i</option>
+                    }
+                </select>
+            </div>
+            <div class="input-group">
+                <span class="input-group-text"><span class="iconify" data-icon="bi:envelope"></span></span>
+                <input type="text" class="form-control" placeholder="Pick-Up Address" asp-for="Address" id="location-input" />
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-text"><span class="iconify" data-icon="icons8:gender"></span></span>
+                <select class="form-select bg-dark text-white" asp-for="Gender">
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="mt-4">
+                <button type="submit" class="registration-btn">@mode</button>
+            </div>
+            <div class="mt-4">
+                <a asp-action="Studentsdetails" asp-controller="Parent"><span class="iconify" style="font-size:40px;color:aliceblue" data-icon="fluent-emoji-high-contrast:back-arrow"></span></a>
+            </div>
+            
+        </form>
+    </div>
+    <div>
+        <div class="map" id="map"></div>
+    </div>
+</div>

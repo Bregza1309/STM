@@ -1,0 +1,61 @@
+﻿@model List<Verification>
+@{
+    Layout = "_AdminLayout";
+    string userId = ViewData["Id"] as string ?? string.Empty;
+}
+<div class="container py-4">
+    <h1 class="text-center text-white display-2">Verifications</h1>
+    <table class="table table-striped table-dark text-white">
+        <thead>
+            <tr><th>Driver's Details</th><th>Vehicle's Registration</th><th>Date</th><th>Vehicle's Max Capacity </th><th></th></tr>
+        </thead>
+        <tbody>
+            @if (!Model.Any())
+            {
+                <tr><td class="text-center" colspan="5">No Verifications</td></tr>
+            }
+            else
+            {
+                @foreach (var verification in Model)
+                {
+                    <tr >
+                        <td>
+                            <a class="btn btn-success" asp-action="Driverdetails" asp-controller="Admin" asp-route-userId="@verification.Driver!.UserId"><span class="iconify" data-icon="carbon:view-filled"></span></a>
+                        </td>
+                        <td>
+                            @verification.Vehicle!.RegistrationNumber
+                        </td>
+                        <td>
+                            @verification.Date.ToLongDateString()
+                        </td>
+                        <td>
+                            @verification.Vehicle.StudentCapacity Learners
+                        </td>
+                        <td>
+                            @verification.Driver.LicenseNumber
+                        </td>
+                        <td>
+                            @if (verification.Verified == null)
+                            {
+                                <a class="btn btn-success" asp-action="Verifications" asp-controller="Admin" asp-route-decision="@true"
+                                   asp-route-Id="@verification.Id"><span class="iconify" data-icon="fluent-mdl2:accept-medium"></span></a>
+                                <a class="btn btn-danger" asp-action="Verifications" asp-controller="Admin" asp-route-decision="@false" asp-route-Id="@verification.Id"><span class="iconify" data-icon="oi:x"></span></a>
+                            }
+                            else
+                            {
+                                @if(verification.Verified.Value)
+                                {
+                                    <div class="bg-success text-white text-center">Successfull</div>
+                                }
+                                else
+                                {
+                                    <div class="bg-danger text-white text-center">Failed</div>
+                                }
+                            }
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

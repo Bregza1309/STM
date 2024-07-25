@@ -1,0 +1,36 @@
+h1[b-gx0vtl9cyp] {
+    text-align: center;
+}
+
+form[b-gx0vtl9cyp] {
+    margin-top: 20px;
+}
+
+.form-group[b-gx0vtl9cyp] {
+    position: relative;
+}
+
+.form-control[b-gx0vtl9cyp] {
+    padding-left: 40px;
+}
+
+.iconify[b-gx0vtl9cyp] {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.preview-image[b-gx0vtl9cyp] {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    display: none;
+}
+
+.container[b-gx0vtl9cyp] {
+    max-width: 600px;
+    padding: 20px;
+    margin-top: 10%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

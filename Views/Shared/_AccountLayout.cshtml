@@ -1,0 +1,29 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Account</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/site.css"/>
+    <script src="~/js/autoAddress.js"></script>
+    <link rel="icon" href="~/favicon-32x32.png" type="image/x-icon">
+    
+
+</head>
+<body>
+    
+    @RenderBody()
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpt0zlCjBZKelUBz4ZYhBnZENLnWJQiRI&libraries=places&callback=initMap&solution_channel=GMP_QB_addressselection_v1_cABC" async defer></script>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/iconify/iconify.min.js"></script>
+    <script src="~/lib/iconify/iconify.js"></script>
+    
+    
+    @await Component.InvokeAsync("Notyf")
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

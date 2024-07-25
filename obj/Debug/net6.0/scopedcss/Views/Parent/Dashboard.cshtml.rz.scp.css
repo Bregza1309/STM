@@ -1,0 +1,30 @@
+body[b-sjz8aqr1ty] {
+    background-color: #404040;
+}
+
+.dashboard-section[b-sjz8aqr1ty] {
+    background-color: #2f702f;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+    .dashboard-section:hover[b-sjz8aqr1ty] {
+        transform: scale(1.05);
+        background: #348F50; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #56B4D3, #348F50); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+.icon-background[b-sjz8aqr1ty] {
+    font-size: 100px;
+    position: absolute;
+    opacity: 0.3;
+}

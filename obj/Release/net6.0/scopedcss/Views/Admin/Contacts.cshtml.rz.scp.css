@@ -1,0 +1,57 @@
+
+h1[b-7318e5a1ns] {
+    text-align: center;
+    color: #333;
+}
+
+/* Style the contact cards */
+.card[b-7318e5a1ns] {
+    margin-bottom: 20px;
+    border: none;
+    background-color:none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+    .card:hover[b-7318e5a1ns] {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+.card-body[b-7318e5a1ns] {
+    padding: 20px;
+    text-align: center;
+    background-color: none;
+}
+
+.card-title[b-7318e5a1ns] {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.card-text[b-7318e5a1ns] {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.unread-messages[b-7318e5a1ns] {
+    font-size: 1rem;
+    color: #ff5733; /* Red color for unread messages count */
+    font-weight: bold;
+}
+
+/* Style the container for the contact list */
+.contacts-list[b-7318e5a1ns] {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Style the icons */
+.contact-icons[b-7318e5a1ns] {
+    font-size: 36px;
+    margin-bottom: 15px;
+}

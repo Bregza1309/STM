@@ -1,0 +1,497 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\STM.bundle.scp.css",
+      "PackagePath": "staticwebassets\\STM.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\Notification.html",
+      "PackagePath": "staticwebassets\\Notification.html"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\android-chrome-192x192.png",
+      "PackagePath": "staticwebassets\\android-chrome-192x192.png"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\android-chrome-512x512.png",
+      "PackagePath": "staticwebassets\\android-chrome-512x512.png"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\apple-touch-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\css\\Chat.css",
+      "PackagePath": "staticwebassets\\css\\Chat.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\css\\blazorValidation.css",
+      "PackagePath": "staticwebassets\\css\\blazorValidation.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\css\\connectionErrors.css",
+      "PackagePath": "staticwebassets\\css\\connectionErrors.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\css\\errorBoundaries.css",
+      "PackagePath": "staticwebassets\\css\\errorBoundaries.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\css\\map.css",
+      "PackagePath": "staticwebassets\\css\\map.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\css\\register.css",
+      "PackagePath": "staticwebassets\\css\\register.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\css\\templatemo_style.css",
+      "PackagePath": "staticwebassets\\css\\templatemo_style.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\css\\verify.css",
+      "PackagePath": "staticwebassets\\css\\verify.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\favicon-16x16.png",
+      "PackagePath": "staticwebassets\\favicon-16x16.png"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\favicon-32x32.png"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\fonts\\FiraSans-Bold.eot",
+      "PackagePath": "staticwebassets\\fonts\\FiraSans-Bold.eot"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\fonts\\FiraSans-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\FiraSans-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\fonts\\FiraSans-Bold.woff",
+      "PackagePath": "staticwebassets\\fonts\\FiraSans-Bold.woff"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\fonts\\FiraSans-Light.eot",
+      "PackagePath": "staticwebassets\\fonts\\FiraSans-Light.eot"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\fonts\\FiraSans-Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\FiraSans-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\fonts\\FiraSans-Light.woff",
+      "PackagePath": "staticwebassets\\fonts\\FiraSans-Light.woff"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\fonts\\FiraSans-Regular.eot",
+      "PackagePath": "staticwebassets\\fonts\\FiraSans-Regular.eot"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\fonts\\FiraSans-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\FiraSans-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\fonts\\FiraSans-Regular.woff",
+      "PackagePath": "staticwebassets\\fonts\\FiraSans-Regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\images\\blur_img.jpg",
+      "PackagePath": "staticwebassets\\images\\blur_img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\images\\download_background.jpg",
+      "PackagePath": "staticwebassets\\images\\download_background.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\images\\download_btn.png",
+      "PackagePath": "staticwebassets\\images\\download_btn.png"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\images\\jumbo_background.jpg",
+      "PackagePath": "staticwebassets\\images\\jumbo_background.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\images\\pattern_bg.png",
+      "PackagePath": "staticwebassets\\images\\pattern_bg.png"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\images\\profiles\\User-Avatar-Profile-PNG-Isolated-Transparent-Picture.png",
+      "PackagePath": "staticwebassets\\images\\profiles\\User-Avatar-Profile-PNG-Isolated-Transparent-Picture.png"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\images\\profiles\\profile.png",
+      "PackagePath": "staticwebassets\\images\\profiles\\profile.png"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\images\\vehicles\\2019-Toyota-Quantum-Taxi-27-Ses-Fikile-16s-1.jpeg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\2019-Toyota-Quantum-Taxi-27-Ses-Fikile-16s-1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\images\\vehicles\\OIP.jpg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\OIP.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\js\\Notify.js",
+      "PackagePath": "staticwebassets\\js\\Notify.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\js\\autoAddress.js",
+      "PackagePath": "staticwebassets\\js\\autoAddress.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\js\\driverMap.js",
+      "PackagePath": "staticwebassets\\js\\driverMap.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\js\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-ui.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\js\\jquery.parallax.js",
+      "PackagePath": "staticwebassets\\js\\jquery.parallax.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\js\\templatemo_scripts.js",
+      "PackagePath": "staticwebassets\\js\\templatemo_scripts.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\iconify\\iconify.d.ts",
+      "PackagePath": "staticwebassets\\lib\\iconify\\iconify.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\iconify\\iconify.js",
+      "PackagePath": "staticwebassets\\lib\\iconify\\iconify.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\iconify\\iconify.min.js",
+      "PackagePath": "staticwebassets\\lib\\iconify\\iconify.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\iconify\\iconify.without-api.d.ts",
+      "PackagePath": "staticwebassets\\lib\\iconify\\iconify.without-api.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\iconify\\iconify.without-api.js",
+      "PackagePath": "staticwebassets\\lib\\iconify\\iconify.without-api.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\iconify\\iconify.without-api.min.js",
+      "PackagePath": "staticwebassets\\lib\\iconify\\iconify.without-api.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\microsoft-signalr\\signalr.js",
+      "PackagePath": "staticwebassets\\lib\\microsoft-signalr\\signalr.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\lib\\microsoft-signalr\\signalr.min.js",
+      "PackagePath": "staticwebassets\\lib\\microsoft-signalr\\signalr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\OneDrive - Richfield Graduate Institute of Technology\\STM\\wwwroot\\site.webmanifest",
+      "PackagePath": "staticwebassets\\site.webmanifest"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.STM.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.build.STM.props",
+      "PackagePath": "build\\STM.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.STM.props",
+      "PackagePath": "buildMultiTargeting\\STM.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildTransitive.STM.props",
+      "PackagePath": "buildTransitive\\STM.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

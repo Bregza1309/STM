@@ -1,0 +1,44 @@
+﻿@model SchoolViewModel
+@{
+    Layout = "_AdminLayout";
+}
+<div class="container mt-5">
+    <div class="card-container">
+        <form method="post" asp-controller="Admin" asp-action="Schools">
+        <div class="panel">
+            <div>
+                <img class="sb-title-icon" src="https://fonts.gstatic.com/s/i/googlematerialicons/location_pin/v5/24px.svg" alt="">
+                <span class="sb-title">Add School</span>
+            </div>
+            
+                <div>
+                    <input type="hidden" id="latitude-input" asp-for="Latitude" />
+                    <input type="hidden" id="longitude-input" asp-for="Longitude" />
+                </div>
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group">
+                    <input type="text" placeholder="Address" id="location-input" />
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="School Name" asp-for="Name" />
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="City" id="locality-input" asp-for="City" />
+                </div>
+                <div class="form-group">
+                    <div class="half-input-container">
+                        <input type="text" class="half-input" placeholder="State/Province" id="administrative_area_level_1-input" asp-for="Provice" />
+                        <input type="text" class="half-input" placeholder="Zip/Postal code" id="postal_code-input" asp-for="PostalCode" />
+                    </div>
+                </div>
+                <button type="submit" class="button-cta">Add</button>
+           
+        </div>
+        </form>
+        <div class="map" id="gmp-map"></div>
+    </div>
+    
+
+</div>
+
+

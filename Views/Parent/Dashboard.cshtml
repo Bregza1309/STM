@@ -1,0 +1,61 @@
+﻿@inject UserManager<ApplicationUser> Manager
+@{
+    Layout = "_ParentLayout";
+    ApplicationUser applicationUser = await Manager.FindByNameAsync(User.Identity!.Name);
+}
+<div class="container mt-4">
+    <div class="row">
+
+        
+        <div class="col-lg-4 mt-4">
+            <a asp-controller="Parent" asp-action="LatestNews" class="text-center" style="text-decoration-line:none">
+                <div class="dashboard-section text-center">
+                    <span class="iconify icon-background" data-icon="arcticons:top-news"></span>
+                    <h3>Latest News and Updates</h3>
+                    <p>Receive important updates and notifications</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 mt-4">
+            <a asp-controller="Parent" asp-action="StudentsDetails" asp-route-Id="@applicationUser.Id" class="text-center" style="text-decoration-line:none">
+                <div class="dashboard-section text-center">
+                    <span class="iconify icon-background" data-icon="fa6-solid:users-line"></span>
+                    <h3>Your Students</h3>
+                    <p>View the details of all the students you registered to the System </p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 mt-4">
+            <a asp-controller="Parent" asp-action="Requests" asp-route-username="@applicationUser.UserName" class="text-center" style="text-decoration-line:none">
+                <div class="dashboard-section text-center">
+                    <span class="iconify icon-background" data-icon="carbon:intent-request-inactive"></span>
+                    <h3>Requests</h3>
+                    <p>View My Requests </p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 mt-4">
+            <a asp-controller="Parent" asp-action="Driverslist" class="text-center" style="text-decoration-line:none">
+                <div class="dashboard-section text-center">
+                    <span class="iconify icon-background" data-icon="mdi:user-search"></span>
+                    <h3>Search for New Driver</h3>
+                    <p>View all the Transport Driver's Information</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 mt-4">
+            <a asp-controller="Parent" asp-action="Schools" class="text-center" style="text-decoration-line:none">
+                <div class="dashboard-section text-center">
+                    <span class="iconify icon-background" data-icon="majesticons:search"></span>
+                    <h3>Search Registered Schools</h3>
+                    <p>View all the the schools registered to the system as Destinations</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+

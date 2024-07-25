@@ -1,0 +1,80 @@
+﻿.sb-title {
+    position: relative;
+    top: -12px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    color: #fff; /* Set text color to white */
+}
+
+.sb-title-icon {
+    position: relative;
+    top: -5px;
+}
+
+.card-container {
+    display: flex;
+    height: 500px;
+    width: 600px;
+    background-color: #333; /* Set card background color to a darker gray */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.panel {
+    background: #333; /* Set panel background color to a darker gray */
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.half-input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.half-input {
+    max-width: 120px;
+}
+
+.map {
+    width: 300px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+h2 {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+input {
+    height: 30px;
+    background-color: #444; /* Set input background color to a dark gray */
+    border: 0;
+    border-bottom: 1px solid white; /* Set input bottom border color to white */
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #fff; /* Set text color to white */
+}
+
+    input:focus::placeholder {
+        color: white;
+    }
+
+.button-cta {
+    height: 40px;
+    width: 40%;
+    background: #3367d6;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: Roboto, sans-serif;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.48);
+    cursor: pointer;
+}

@@ -1,0 +1,45 @@
+
+
+.dashboard-section[b-igcvq6xh9h] {
+    background: #1488CC; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #2B32B2, #1488CC); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+    .dashboard-section:hover[b-igcvq6xh9h] {
+        transform: scale(1.05);
+        background-color: #858282;
+        background: #2b5876; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #4e4376, #2b5876); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+.icon-background[b-igcvq6xh9h] {
+    font-size: 100px;
+    position: absolute;
+    opacity: 0.3;
+}
+#dashLink[b-igcvq6xh9h] {
+    background: #141E30; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #243B55, #141E30); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.iconify[b-igcvq6xh9h]{
+    color:#fff;
+}
+#dashLink:hover[b-igcvq6xh9h] {
+    background: #0575E6; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #021B79, #0575E6); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

@@ -1,0 +1,55 @@
+﻿@page "/map/Driver/{driverId}/{studentId}"
+@inject IJSRuntime JSRuntime
+@inject IService<Driver> DriverService
+@inject IStudentRepository StudentRepo
+@inject UserManager<ApplicationUser> UserManager
+<div class="container-fluid">
+    @if(driver != null)
+    {
+        <input type="hidden" @bind ="driver.Latitude" id="driverLatitude" />
+        <input type="hidden" @bind="driver.Longitude" id="driverLongitude" />
+    }
+    @if(student != null)
+    {
+        <input type="hidden" @bind-value="student.Latitude" id="studentLatitude" />
+        <input type="hidden" @bind-value="driver!.Longitude" id="studentLongitude" />
+    }
+    <input type="hidden"  id="userLatitude" value="0" />
+    <input type="hidden" id="userLongitude" value="0" />
+    <div class="row">
+        <div class="col-md-9">
+            <!-- Google Map Container -->
+            <div id="driverMap"></div>
+        </div>
+        <div class="col-md-3">
+            <!-- Sidebar for Directions -->
+            <div id="directions-panel">
+                <h3>Directions</h3>
+                <div id="directions"></div>
+            </div>
+        </div>
+    </div>
+</div>
+@code {
+    [Parameter]
+    public string driverId { get; set; } = string.Empty;
+    [Parameter]
+    public string studentId { get; set; } = string.Empty;
+
+    ApplicationUser? driver { get; set; } 
+    Student? student { get; set; }
+    protected override void OnParametersSet()
+    {
+        driver = DriverService.Get(driverId).First().Key;
+        student = StudentRepo.GetStudent(int.Parse(studentId));
+    }
+    protected override async void OnAfterRender(bool firstRender)
+    {
+        base.OnAfterRender(firstRender);
+        await JSRuntime.InvokeVoidAsync("initMap");
+    }
+    private void SaveChanges(ChangeEventArgs e)
+    {
+        UserManager.UpdateAsync(driver);
+    }
+}

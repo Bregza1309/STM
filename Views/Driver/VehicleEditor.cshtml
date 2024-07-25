@@ -1,0 +1,66 @@
+﻿@model Vehicle
+@inject UserManager<ApplicationUser> Manager
+@inject IService<Driver> DriverService
+@{
+    Layout = "_DriverLayout";
+    ApplicationUser applicationUser = await Manager.FindByNameAsync(User.Identity!.Name);
+    int driverId = DriverService.Get(applicationUser.Id).Values.First().DriverId;
+}
+<h1 class="text-white display-2">@ViewBag.mode Vehicle</h1>
+<div class="container justify-content-center">
+    
+    <form id="registration-form" class="text-center" enctype="multipart/form-data" asp-action="VehicleEditor" asp-controller="Driver"  method="post">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <input type="hidden" asp-for="DriverId" value="@driverId"/>
+        <input type="hidden" name="userId" value="@applicationUser.Id" />
+        <input type="hidden" name="mode" value="@(ViewBag.mode)" />
+        <div class="input-group mt-2">
+            <span class="input-group-text bg-dark text-white"><span class="iconify" data-icon="mdi:car"></span></span>
+            <input  class="form-control" id="vehicleMake" asp-for="Description" placeholder="Vehicle Description">
+        </div>
+        <div class="input-group mt-2">
+            <span class="input-group-text bg-dark text-white"><span class="iconify" data-icon="mdi:car"></span></span>
+            <input  class="form-control"   placeholder="Vehicle Learner Capacity" asp-for="StudentCapacity" >
+        </div>
+
+        <div class="input-group mt-2">
+            <span class="input-group-text bg-dark text-white"><span class="iconify" data-icon="mdi:license"></span></span>
+            <input  class="form-control" id="licensePlate" asp-for="RegistrationNumber" placeholder="License Plate">
+        </div>
+
+        <div class="input-group mt-2">
+            <span class="input-group-text bg-dark text-white"><span class="iconify" data-icon="mdi:image"></span></span>
+            
+            <input type="file" class="form-control" id="vehicleImage" name="file" accept="image/*" placeholder="Vehicle Image">
+        </div>
+        @if (ViewBag.mode == "Register")
+        {
+            <img class="preview-image img-fluid" id="preview-image" src="" alt="Vehicle Image">
+        }
+        @if(ViewBag.mode == "Edit")
+        {
+            <img class="preview-image img-fluid" id="preview-image" src="~/images/vehicles/@Model.Image" alt="Vehicle Image">
+        }
+
+        <button type="submit" class="btn btn-primary mt-2">@ViewBag.mode Vehicle</button>
+    </form>
+</div>
+<script>
+    const vehicleImageInput = document.getElementById('vehicleImage');
+    const previewImage = document.getElementById('preview-image');
+
+    vehicleImageInput.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+
+        if (file) {
+            const reader = new FileReader();
+
+            reader.onload = (e) => {
+                previewImage.src = e.target.result;
+                previewImage.style.display = 'block';
+            };
+
+            reader.readAsDataURL(file);
+        }
+    });
+</script>

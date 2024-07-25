@@ -1,0 +1,30 @@
+﻿@page "/chat"
+
+@{
+    Layout = null;
+
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>STM</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/Chat.css" rel="stylesheet"/>
+    <link rel="icon" href="~/favicon-32x32.png" type="image/x-icon">
+    <base href="/" />
+</head>
+<body>
+    <div class="container">
+        
+        <component type="typeof(Routed)" render-mode="Server" />
+    </div>
+    <script src="/_framework/blazor.server.js"></script>
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/iconify/iconify.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/Notify.js" asp-append-version="true"></script>
+    @await Component.InvokeAsync("Notyf")
+</body>
+</html>

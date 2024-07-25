@@ -1,0 +1,24 @@
+﻿@inject UserManager<ApplicationUser> Manager
+@{
+    ApplicationUser applicationUser = await Manager.FindByNameAsync(User.Identity!.Name);
+}
+<div class="floating-container">
+    <div class="floating-button">+</div>
+    <div class="element-container">
+        <a asp-action="MyEditor" asp-controller="Parent" asp-route-Id="@applicationUser.Id">
+            <span class="float-element tooltip-left">
+                <span class="iconify" data-icon="material-symbols:settings"></span>
+            </span>
+        </a>
+        <a asp-action="Contacts" asp-controller="Parent">
+            <span class="float-element">
+                <span class="iconify" data-icon="bxs:contact"></span>
+            </span>
+        </a>
+        <a asp-action="Logout" asp-controller="account">
+            <span class="float-element">
+                <span class="iconify logout" data-icon="majesticons:logout"></span>
+            </span>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,60 @@
+﻿@model List<Request>
+@{
+    Layout = "_DriverLayout";
+    string userId = ViewData["Id"] as string ?? string.Empty;
+}
+<div class="container py-4">
+    <h1 class="text-center text-white display-2">Requests</h1>
+    <table class="table table-striped table-dark text-white">
+        <thead>
+            <tr><th>Student's Fullname</th><th>School Name</th><th>Address</th><th>Date and Time</th><th></th></tr>
+        </thead>
+        <tbody>
+            @if (!Model.Any())
+            {
+                <tr><td class="text-center" colspan="5">No Requests</td></tr>
+            }
+            else
+            {
+                @foreach (var request in Model)
+                {
+                    <tr class="drivers show">
+                        <td>
+                            @($"{request.Student!.Firstname}, {request.Student!.Lastname}")
+                        </td>
+                        <td>
+                            @request.Student.School!.Name
+                        </td>
+                        <td>
+                            @request.Student.Address
+                        </td>
+                        <td>
+                            @request.DateTime.ToLongDateString();
+                        </td>
+                        <td>
+                            @if (request.Accepted == null)
+                            {
+                                <a class="btn btn-success" asp-action="Requests" asp-controller="Driver" asp-route-decision="@true"
+                                   asp-route-requestId="@request.Id" asp-route-Id="@userId"
+                                   asp-route-Id="@request.Id"><span class="iconify" data-icon="fluent-mdl2:accept-medium"></span></a>
+                                <a class="btn btn-danger" asp-action="Requests" asp-controller="Driver" asp-route-decision="@false" asp-route-requestId="@request.Id"
+                                   asp-route-Id="@userId"><span class="iconify" data-icon="oi:x"></span></a>
+                            }
+                            else
+                            {
+                                @if (request.Accepted.Value)
+                                {
+                                    <div class="bg-success text-white text-center">Accepted</div>
+                                }
+                                else
+                                {
+                                    <div class="bg-danger text-white text-center">Declined</div>
+                                }
+                    }
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

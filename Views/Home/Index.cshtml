@@ -1,0 +1,129 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout";
+}
+
+<!-- Home -->
+<section id="templatemo_home">
+    <div class="container">
+        
+        <div class="templatemo_home_inner_wapper btn_wapper sticky-top">
+            <div class="col-sm-6">
+                <a href="#templatemo_features" class="btn col-xs-12 scroll_effect shadow-top-down">
+                    <i class="fa fa-align-justify"></i> Features
+                </a>
+            </div>
+            <div class="col-sm-6">
+                <a class="btn col-xs-12 scroll_effect shadow-top-down" asp-action="Login" asp-controller="Account">
+                    <i class="fa fa-sign-in" aria-hidden="true"></i> Sign In
+                </a>
+            </div>
+        </div>
+        <div class="templatemo_home_inner_wapper">
+            
+            
+        </div>
+    </div>
+</section>
+<!-- Features -->
+<section id="templatemo_features">
+    <div class="container-fluid">
+        <header class="template_header">
+            <h1 class="text-center"><span>...</span> Features <span>...</span></h1>
+        </header>
+        <div class="col-sm-12">
+            <div class="col-sm-6 col-lg-3 feature-box">
+                <div class="feature-box-inner">
+                    <div class="feature-box-icon">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>
+                    <p>
+                        Offers Real-time Driver Location Tracking using GPS 
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 feature-box">
+                <div class="feature-box-inner">
+                    <div class="feature-box-icon">
+                        <i class="fa fa-check-circle"></i>
+                    </div>
+                    <p>
+                       Offers Professional and Verified Drivers to Securely transport your children
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 feature-box">
+                <div class="feature-box-inner">
+                    <div class="feature-box-icon">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                    </div>
+                    <p>
+                        Manage every apsect of your child's Transportaion at your fingertips
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 feature-box">
+                <div class="feature-box-inner">
+                    <div class="feature-box-icon">
+                        <i class="fa fa-comments" aria-hidden="true"></i>
+                    </div>
+                    <p>
+                        Offers Real-time Communication between Parents , Drivers and The Admin 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact -->
+<section id="templatemo_contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <header class="template_header">
+                    <h1 class="text-center"><span>...</span> Contact <span>...</span></h1>
+                </header>
+                <p class="text-center">
+                    
+                    <i class="fa fa-envelope"></i> Email: <a href="mailto:info@stm.com">info@stm.com</a><br />
+                    <i class="fa fa-phone"></i> Phone: <a href="tel:010-020-0340">010-020-0340</a>
+                </p>
+            </div>
+        </div>
+        <form role="form" action="#" method="post">
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                    <input type="text" name="name" class="form-control" id="contact-name" placeholder="Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon"><i class="fa fa-at"></i></div>
+                    <input type="text" name="email" class="form-control" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon"><i class="fa fa-envelope-o"></i></div>
+                    <textarea name="message" class="form-control" id="contact-message" placeholder="Message"></textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-6 col-xs-offset-6">
+                    <button type="submit" class="form-control">Send</button>
+                </div>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <ul class="nav nav-pills social">
+                    <li><a href="#" class="shadow-top-down social-facebook"><i class="fa fa-facebook-official"></i></a></li>
+                    <li><a href="#" class="shadow-top-down social-twitter"><i class="fa fa-twitter-square"></i></a></li>
+                    <li><a href="#" class="shadow-top-down social-youtube"><i class="fa fa-youtube-square"></i></a></li>
+                    <li><a href="#" class="shadow-top-down social-instagram"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

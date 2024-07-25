@@ -1,0 +1,89 @@
+﻿@model List<Student>
+@inject IService<Parent> ParentService
+@inject IService<Driver> DriverService;
+@{
+    Layout = "_AdminLayout";
+    string driverId = ViewData["Id"] as string ?? "0";
+    Func<string, string> getParentName = (Id) =>
+    {
+        var parent = ParentService.Get(Id).Keys.First();
+        return $"{parent.Firstname} , {parent.Lastname}";
+    };
+    Func<string, string> getParentEmail = (Id) =>
+    {
+        var parent = ParentService.Get(Id).Keys.First();
+        return parent.Email;
+    };
+    Func<string, string> getParentPhone = (Id) =>
+    {
+        var parent = ParentService.Get(Id).Keys.First();
+        return parent.PhoneNumber;
+    };
+    Func<string, string> getDriverName = (Id) =>
+    {
+        var driver = DriverService.Get(Id).Keys.First();
+        return $"{driver.Firstname} , {driver.Lastname}";
+    };
+}
+<div class="container py-4">
+    <div class="jumbotron mt-4">
+        <h1 class="display-4 text-center">MyStudents</h1>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form asp-action="StudentsDetails" asp-controller="Admin" method="get" class="mb-4" id="searchForm">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for students using any keyword..." name="key">
+                    <button type="submit" id="searchInput" class="btn btn-success"><span class="iconify" data-icon="ri:user-search-fill"></span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <table class="table table-striped table-dark text-white mt-2 container-fluid">
+        <thead>
+            <tr><th>FirstName</th><th>LastName</th><th>Gender</th><th>Grade</th><th>School Name</th><th>Parent's Name</th><th>Parent's Contact Details</th><th>Driver's Name</th></tr>
+        </thead>
+        <tbody>
+            @if (Model.Any())
+            {
+                @foreach (Student student in Model)
+                {
+                    <tr>
+                        <td>@student.Firstname</td>
+                        <td>@student.Lastname</td>
+                        <td>@student.Gender</td>
+                        <td>@student.Grade</td>
+                        <td>@(student.School == null ? "No School Found" : student.School.Name)</td>
+                        <td>@getParentName(student.Parent!.UserId)</td>
+                        <td>
+                            <div>Email : <a href="mailto:@getParentEmail(student.Parent.UserId)">@getParentEmail(student.Parent.UserId)</a></div>
+                            <div>Phone : <a href="tel:@getParentPhone(student.Parent.UserId)">@getParentPhone(student.Parent.UserId)</a></div>
+                        </td>
+                        <td>
+                            @if(!(student.Driver == null))
+                            {
+                                @getDriverName(student.Driver!.UserId)
+                                ;
+                            }
+                            else
+                            {
+                                <p>Pending Driver Assignment</p>
+                            }
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr><td colspan="8" class="text-center">No Registered Students</td></tr>
+            }
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5" class="text-center">Total </td>
+                <td colspan="3" class="text-center">@Model.Count()</td>
+            </tr>
+        </tfoot>
+    </table>
+</div>

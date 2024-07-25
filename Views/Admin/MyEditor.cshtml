@@ -1,0 +1,70 @@
+﻿@model AdminEditViewModel
+@{
+    Layout = "_AdminLayout";
+}
+<div class="content">
+    <div class="registration-container">
+        <div class="text-center container-fluid">
+            <img class="rounded-circle" id="preview-image" src="~/images/profiles/@Model.Avatar" width="200" height="200" />
+        </div>
+        <h2 class="registration-title">Personal Information</h2>
+        <form class="registration-form" asp-action="MyEditor" enctype="multipart/form-data" asp-controller="Admin" method="post">
+            <div class="text-danger" asp-validation-summary="All"></div>
+            <input type="hidden" asp-for="Id" value="@Model.Id"/>
+            <div class="input-group">
+                <span class="input-group-text"><span class="iconify" data-icon="bi:person"></span></span>
+                <input type="text" class="form-control" asp-for="FirstName" placeholder="FirstName">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text"><span class="iconify" data-icon="bi:person"></span></span>
+                <input type="text" class="form-control" placeholder="LastName" asp-for="LastName">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text"><span class="iconify" data-icon="bi:person"></span></span>
+                <input type="text" class="form-control" placeholder="UserName" asp-for="UserName">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text"><span class="iconify" data-icon="bi:telephone"></span></span>
+                <input type="tel" class="form-control" placeholder="CellNumber" asp-for="PhoneNumber">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text"><span class="iconify" data-icon="bi:envelope"></span></span>
+                <input type="email" class="form-control" placeholder="Email" asp-for="Email" value="@Model.Email">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text"><span class="iconify" data-icon="bi:key"></span></span>
+                <input type="password" class="form-control" placeholder="Current Password" asp-for="CurrentPassword" value="@Model.CurrentPassword">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text"><span class="iconify" data-icon="bi:key"></span></span>
+                <input type="password" class="form-control" placeholder="New Password" asp-for="Password">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text"><span class="iconify" data-icon="bi:key"></span></span>
+                <input type="password" class="form-control" placeholder="Confirm Password" asp-for="ConfirmPassword">
+            </div>
+            <div class="input-group mt-2">
+                <span class="input-group-text bg-dark text-white"><span class="iconify" data-icon="mdi:image"></span></span>
+
+                <input type="file" class="form-control" id="ProfileImage" name="file" accept="image/*">
+            </div>
+            <button type="submit" class="registration-btn">Save</button>
+        </form>
+    </div>
+</div>
+<script>
+    const vehicleImageInput = document.getElementById('ProfileImage');
+    const previewImage = document.getElementById('preview-image');
+
+    vehicleImageInput.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                previewImage.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+</script>

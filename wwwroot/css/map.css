@@ -1,0 +1,17 @@
+﻿#driverMap {
+    height: 100%;
+    width: 100%;
+}
+#map {
+    width: 100%;
+    height: 100vh; 
+}
+#directions-panel {
+    width: 300px;
+    float: right;
+    margin-top: 10px;
+    background-color:#ffffff;
+}
+body {
+    background-color: #292b2c;
+}

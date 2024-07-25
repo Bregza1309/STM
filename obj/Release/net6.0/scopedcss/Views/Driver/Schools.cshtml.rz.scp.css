@@ -1,0 +1,43 @@
+
+
+.jumbotron[b-op5d5q31w8] {
+    
+    color: #fff;
+}
+
+.school-card[b-op5d5q31w8] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+
+.card-header[b-op5d5q31w8] {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.iconify[b-op5d5q31w8] {
+    color: purple;
+}
+
+
+.search-bar[b-op5d5q31w8] {
+    
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.search-input[b-op5d5q31w8] {
+    
+    background-color: #444;
+    color: #fff;
+    border: none;
+}
+
+.list-group-item[b-op5d5q31w8] {
+    display: none; /* Hide all items initially */
+}
+
+    .list-group-item.show[b-op5d5q31w8] {
+        display: block; /* Show items that match the search query */
+    }
